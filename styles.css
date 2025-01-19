@@ -1,0 +1,226 @@
+/*CONFIGURATION*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&display=swap');
+
+:root {
+    --primary-color: #8c4511;
+    --color-white: #feffdb;
+    --color-green: #5c6b28;
+    --color-black:#332114;
+    --color-beige: #e7e8a6;
+  }
+
+  *{
+    
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Lato;
+        color:var(--color-black)
+      }
+button {
+    all :unset;
+}
+  
+  h1, h2, h3 {
+    font-family : Simonetta;
+  }
+  p {
+    margin: 1rem ;
+  }
+/*HEADER ET NAV*/
+header {
+    background-color: var(--color-beige);
+    display: flex;
+    padding:0.5rem;
+    justify-content: space-around;
+    align-items: flex-end;
+
+}
+nav {
+    display: flex;
+}
+nav > ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-around;
+    
+  }
+nav > ul > li {
+   font-size: 1rem;
+   line-height: 2rem;
+   font-size: 0.8rem;
+   font-weight: 600;
+}
+.header-logo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-logo h2 {
+    font-size: 1rem;
+    margin : 0.5rem;
+}
+.header-logo img {
+    height: 5rem;
+    width: auto;
+}
+button {
+    background-color: var(--color-green);
+    color : var(--color-white);
+    font-weight: 500;
+    border-radius: 0.8rem;
+    width:5rem;
+    height: 2rem;
+    box-shadow: 5px 5px 5px rgb(140, 140, 129);
+    text-align: center;
+    font-size: 0.8rem;
+}
+/*BIENVENUE*/
+h1{
+    margin:1rem;
+    font-size: 1.5rem;
+}
+p{
+    font-size:1rem;
+}
+img{
+    max-width: 100vw;
+}
+.coordonnees{
+    text-align: center;
+}
+/*SPECIALITES*/
+.specialites {
+    background-color: var(--color-beige);
+    padding : 0.1rem 0 0.1rem 0;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+}
+h2 {
+    margin:3rem auto 2rem;
+    text-align: center;
+}
+main div ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+main div ul li {
+    text-align: center;
+    margin-top : 1rem;
+}
+/*LE MOT DU CHEF*/
+.chef div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.chef p {
+    margin : 2rem;
+    max-width : 65ch;
+}
+.chef img {
+    max-width: 15rem;
+}
+/*FOOTER*/
+footer{
+    background-color: var(--color-beige);
+    display: flex;
+    flex-direction: column;
+    padding:0.5rem;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 1rem;
+}
+.logo img {
+    height: 4rem;
+    margin-left: 1rem;
+}
+.logo h2{
+    font-size: 1rem;
+    margin : 0.5rem;
+}
+footer button {
+    margin : 0.5rem;
+}
+footer a{
+    font-size: 0.5rem;
+    margin : 0.5rem;
+}
+
+
+/*RESPONSIVE VERSION DESKTOP*/
+@media screen and (min-width: 768px) {
+    header{
+        align-items :end;
+    }
+    nav > ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        width: 40vw;
+      }
+    nav > ul > li {
+        font-size: 1rem;
+    }
+    .header-logo {
+        order:-1;
+    }
+    .header-logo h2 {
+        font-size: 1.5rem;
+    }
+    
+    h1{
+        text-align: center;
+    }
+    .bienvenue {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .bienvenue p {
+        width: 50vh;
+    }
+    img{
+        max-width: 30vw;
+        margin:0.5rem;
+    }
+    main div ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    main div ul li {
+        width:30vw;
+    }
+    main div ul li img {
+        width:25vw;
+    }
+    .chef div {
+        display: flex;
+        align-items: center;
+    }
+    .chef img{
+        width:30vw;
+    }
+    .chef p{
+        line-height: 2.5rem;
+        max-width : 65ch;
+    }
+    cite{
+        font-style: italic;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .logo {
+        order:-1;
+    }
+
+}
